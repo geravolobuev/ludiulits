@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <title>Ludi Ulits</title>
+        <meta name="description" content="Ludiulits - Street style blog.">
+        <link rel="canonical" href="https://ludiulits.github.io/">
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <%= render 'layouts/preloader' %>
+        <header class='site-header'>
+            <%= render 'layouts/sidebar' %>
+        </header>
+        <main role="main">
+        <%= render 'layouts/photo' %>
+        <%= yield %>
+        </main>
+        <!-- Overlay -->
+        <%= render 'layouts/overlay' %>
+    </body>
+</html>

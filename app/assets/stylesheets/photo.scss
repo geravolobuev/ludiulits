@@ -1,0 +1,48 @@
+/** 
+ * Page content
+ */
+.photo {
+    max-width: calc(100vw - 60px);
+    max-height: calc(100vh - 60px);
+}
+
+.section {
+    text-align:center;
+    font-size: 3em;
+}
+
+#callbacks-placeholder {
+    position:fixed;top:50px;left:50px;color:black;z-index:999;
+}
+
+
+a,a:active,a:focus,a:hover {
+    color:black;
+}
+
+.transition {
+    transition: color 250ms ease-in-out;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.transition, a, a:visited {
+    -webkit-transition: color 250ms ease-in-out;
+    -moz-transition: color 250ms ease-in-out;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    -o-transition: color 250ms ease-in-out;
+}
+
+a,a:visited {
+    color:#303030;
+    transition:color 250ms ease-in-out
+}
+
+.transition:active,.transition:focus,.transition:hover {
+    color:#fe7aff!important
+}

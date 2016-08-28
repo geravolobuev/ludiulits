@@ -1,0 +1,65 @@
+body, html {
+    font-family: 'Quicksand',sans-serif;
+    color: #000;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
+}
+
+/**
+ * Social icons
+ */
+
+    @font-face {
+        font-family:icons;
+        src:url(fonts/icons.eot);
+        src:url(fonts/icons.eot) format('embedded-opentype'),url(fonts/icons.ttf) format('truetype'),url(fonts/icons.woff) format('woff'),url(fonts/icons.svg) format('svg');
+    font-weight:400; font-style:normal; }
+
+    .icons {
+        font-family:icons;
+        speak:none
+    }
+
+    .icon-fb:before {
+        content:'\e903'
+    }
+    .icon-ig:before {
+        content:'\e905'
+    }
+    .icon-pt:before {
+        content:'\e908'
+    }
+    .icon-tm:before {
+        content:'\e90a'
+    }
+    .icon-vk:before {
+    content:'\e90c' }
+
+    /**
+     * Misc
+     */
+
+    .fp-controlArrow {
+        display: none;
+    }
+
+    .fp-slidesNav.bottom {
+        bottom: 0;
+    }
+
+    .fp-slidesNav ul li a span {
+        height: 12px;
+        width: 12px;
+        background: black;
+        margin: -6px 0 0 -6px;
+        opacity: .2;
+    }
+
+    #fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span {
+        background: #fe7aff;
+        opacity: 1;
+    }
+
